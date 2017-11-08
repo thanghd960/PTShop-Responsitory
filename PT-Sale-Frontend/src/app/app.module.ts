@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ShopListComponent } from './shop/shop-list.component';
+import { ShopShowComponent } from './shop/shop-show.component';
 import { ShopService } from './shop/shop.service';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     ShopListComponent,
-    HomepageComponent
+    HomepageComponent,
+    ShopShowComponent
   ],
   imports: [
     BrowserModule,

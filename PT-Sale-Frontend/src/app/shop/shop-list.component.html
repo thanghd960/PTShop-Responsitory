@@ -1,7 +1,65 @@
-<div class="shop-list" *ngFor = "let shop of shops">
-  <div>
-    {{shop.id}}
-    {{shop.adress}}
+<!-- <table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Shop</th>
+      <th>Address</th>
+      <th>Shopkeeper</th>
+      <th>Status</th>
+      <th>Created At</th>
+      <th>Updated At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let shop of shops">
+      <th scope="row">{{shop.id}}</th>
+      <td>{{shop.name}}</td>
+      <td>{{shop.adress}}</td>
+      <td>{{shop.shopkeeper}}</td>
+      <td>{{shop.status}}</td>
+      <td>{{shop.created_at}}</td>
+      <td>{{shop.updated_at}}</td>
+    </tr>
 
-  </div>
+  </tbody>
+</table> -->
+<div class="portlet box green">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-cogs"></i>Basic Bootstrap 3.0 Responsive Table </div>
+        <div class="tools">
+            <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
+            <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title=""> </a>
+            <a href="javascript:;" class="reload" data-original-title="" title=""> </a>
+            <a href="javascript:;" class="remove" data-original-title="" title=""> </a>
+        </div>
+    </div>
+    <div class="portlet-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Shop</th>
+                        <th>Address</th>
+                        <th>Shopkeeper</th>
+                        <th>Status</th>                        
+                        <th></th>
+                      </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let shop of shops">
+                        <th scope="row">{{shop.id}}</th>
+                        <td>{{shop.name}}</td>
+                        <td>{{shop.adress}}</td>
+                        <td>{{shop.shopkeeper}}</td>
+                        <td>{{shop.status}}</td>                       
+                        <td>
+                            <a (click)="goToShow(shop)">Show</a>
+                        </td>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

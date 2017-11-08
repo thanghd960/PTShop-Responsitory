@@ -1,0 +1,102 @@
+<div class="portlet light bordered" *ngIf="shop">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="icon-equalizer font-green-haze"></i>
+            <span class="caption-subject font-green-haze bold uppercase">Infor</span>
+           
+        </div>
+        <div class="tools">
+            <a href="" class="collapse" data-original-title="" title=""> </a>
+            <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title=""> </a>
+            <a href="" class="reload" data-original-title="" title=""> </a>
+            <a href="" class="remove" data-original-title="" title=""> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form class="form-horizontal" role="form">
+            <div class="form-body">
+               
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Shop:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static"> {{shop.name}} </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Address:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static">{{shop.adress}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                </div>
+                <!--/row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Shopkeeper:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static"> {{shop.shopkeeper}} </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Status:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static"> {{shop.status}} </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                </div>
+                <!--/row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Created at:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static"> {{shop.created_at}} </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Updated at:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static">{{shop.updated_at}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                </div>
+                <!--/row-->
+               
+            </div>
+            <div class="form-actions">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn green">
+                                        <i class="fa fa-pencil"></i> Edit</button>
+                                <button type="button" class="btn default">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6"> </div>
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>

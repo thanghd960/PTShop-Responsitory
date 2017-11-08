@@ -7,7 +7,13 @@ import { Shop } from './shop';
 export class ShopService{
     private shopUrl = "http://localhost:3000/portal/shops";
     constructor(private http: Http){}
+    
     getShops(): Observable<Shop[]>{
-        return this.http.get(this.shopUrl).map((response: Response) => <Shop[]>response.json())
+        return this.http.get(this.shopUrl)
+        .map((response: Response) => <Shop[]>response.json())
+    }
+
+    getShop(id: number){
+        return this.http.get(this.shopUrl + "/" + id + '.json')
     }
 }

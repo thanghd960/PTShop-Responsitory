@@ -1,3 +1,3 @@
 class ShopSerializer < ActiveModel::Serializer
-  attributes :id, :adress, :shopkeeper, :status, :created_at
+  attributes :id, :name, :adress, :shopkeeper, :status, :created_at , :updated_at
 end
