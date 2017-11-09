@@ -16,4 +16,9 @@ export class ShopService{
     getShop(id: number){
         return this.http.get(this.shopUrl + "/" + id + '.json')
     }
+    createShop(shop: Shop): Observable<Shop>{
+        let headers = new Headers({'Content-Type':'application/json'});
+        let options = new RequestOptions({headers: headers});
+        return this.http.post(this.shopUrl, JSON.stringify(shop),options).map((res: Response) => res.json());
+    }
 }

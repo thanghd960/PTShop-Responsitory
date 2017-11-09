@@ -8,6 +8,7 @@ import { ShopListComponent } from './shop/shop-list.component';
 import { ShopShowComponent } from './shop/shop-show.component';
 import { ShopService } from './shop/shop.service';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ShopNewComponent } from './shop/shop-new.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     ShopListComponent,
     HomepageComponent,
-    ShopShowComponent
+    ShopShowComponent,
+    ShopNewComponent,
   ],
   imports: [
     BrowserModule,

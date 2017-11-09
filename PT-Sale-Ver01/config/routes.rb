@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   namespace :portal do
-    resources :shops, only: [:index, :show, :update, :destroy]
+    resources :shops
   end
 end

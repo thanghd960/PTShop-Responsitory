@@ -1,0 +1,72 @@
+
+<div class="portlet box green">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-gift"></i>New Shop</div>
+        <div class="tools">
+            <a href="javascript:;" class="collapse" data-original-title="" title=""> </a>
+            <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title=""> </a>
+            <a href="javascript:;" class="reload" data-original-title="" title=""> </a>
+            <a href="javascript:;" class="remove" data-original-title="" title=""> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form (ngSubmit)="createShop(shop)" #shopForm='ngForm' class="form-horizontal">
+            <div class="form-body">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Name (*)</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-circle" placeholder="Shop name" required name="name" #title='ngModel' [(ngModel)]='shop.name'>                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="form-body">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Address (*)</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-circle" placeholder="Address" required name="adress" #title='ngModel' [(ngModel)]='shop.adress'>                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="form-body">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Shopkeeper (*)</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-circle" placeholder="Shopkeeper" required name="shopkeeper" #title='ngModel' [(ngModel)]='shop.shopkeeper'>                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="form-body">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Status</label>
+                    <div class="col-md-4">
+                        <!-- <input type="checkbox" class="form-control input-circle" required name="status" #title='ngModel' [(ngModel)]='shop.status'>       -->
+                        <input type="checkbox" class="icheck" name="status" #title='ngModel' [(ngModel)]='shop.status' >                  
+                    </div>
+                </div>
+                
+            </div>
+            <div class="input-group">
+                <div class="icheck-list">
+                    <label class="">
+                        <div class="icheckbox_flat-blue" style="position: relative;">
+                            <input type="checkbox" class="icheck" name="status" #title='ngModel' [(ngModel)]='shop.status' ></div>  </label>
+                    
+                </div>
+            </div>
+            <div class="form-actions">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-9">
+                        <button type="submit" class="btn btn-circle green" [disabled]="!shopForm.form.valid">Submit</button>
+                        <!-- <button type="button" class="btn btn-circle grey-salsa btn-outline">Cancel</button> -->
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>
